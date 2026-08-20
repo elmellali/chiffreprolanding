@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  
+  --animate-float: floatCard 6s infinite ease-in-out alternate;
+  --animate-float-fast: floatCard 5s infinite ease-in-out alternate;
+  --animate-pulse-shadow: secPulse 3s infinite ease-in-out;
+  --animate-fade-up: fadeUp 0.8s ease-out forwards;
+  --animate-fade-left: fadeLeft 0.8s ease-out forwards;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes secPulse {
+  0%, 100% { box-shadow: 0 8px 24px rgba(99,102,241,0.2); }
+  50% { box-shadow: 0 12px 36px rgba(99,102,241,0.35); }
+}
+
+:root {
+  --background: 226 50% 98%; /* #f8f9fc */
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 206 50% 24%; /* #1e405a */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 214 32% 91%; /* slate-200 */
+  --secondary-foreground: 206 50% 24%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 25 95% 53%; /* orange-500 */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 206 50% 24%;
+  --radius: 0.75rem;
+}
+
+* {
+  @apply border-border;
+}
+body {
+  @apply bg-background text-foreground;
+  overflow-x: hidden;
+}
+
+/* Background Blobs */
+.bg-blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+}
+
+.blob-1 {
+  width: 600px;
+  height: 600px;
+  background: #cbd5e1; /* slate-300 */
+  top: -200px;
+  left: -100px;
+}
+
+.blob-2 {
+  width: 700px;
+  height: 700px;
+  background: #fed7aa; /* orange-200 */
+  bottom: -150px;
+  right: -200px;
+}
+
+.mockup-3d {
+  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+  border: 8px solid white;
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Scroll Animations */
+.scroll-anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.scroll-anim.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-anim-left {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease-out 0.15s, transform 0.7s ease-out 0.15s;
+}
+.scroll-anim-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
