@@ -1,0 +1,31 @@
+# Chiffre Pro
+
+Chiffre Pro is a modern, privacy-first Moroccan ERP and invoicing desktop application designed for SMEs (TPE/PME). It operates 100% offline, keeping all financial data secure on the user's local machine, while offering advanced AI capabilities.
+
+## Key Value Proposition
+- **100% Offline & Private:** All data (SQLite database) is stored locally. No mandatory cloud syncing.
+- **No Subscriptions:** Available as a lifetime license with a one-time payment.
+- **Moroccan Compliance:** Specifically built for Moroccan businesses (supports ICE, RC, IF, Patente, auto-calculated Moroccan VAT, and DGI reports).
+
+## Core Modules & Features
+- **Sales & Invoicing:** Create, customize, and manage Estimates (Devis), Invoices (Factures), Delivery Notes (Bons de livraison), Credit Notes (Avoirs), and Recurring Invoices.
+- **Purchases & Expenses:** Manage Purchase Requests, Purchase Orders, Purchase Invoices, and track day-to-day business expenses with smart receipt scanning.
+- **Inventory Management:** Real-time stock tracking with low-stock alerts and product categorization.
+- **Financial Dashboard:** Visual insights into cash flow, outstanding balances, profit margins, and sales by category.
+- **AI Copilot Suite:** 
+  - *Receipt Scanner:* Automatically extract amounts, dates, and supplier names from uploaded receipts (supports Gemini, Groq, OpenRouter).
+  - *Smart Assistant:* Draft professional emails to clients or generate product descriptions.
+  - *Data Privacy:* Supports connecting to local, offline LLMs via Ollama for complete privacy.
+- **Multi-Currency:** Support for global currencies with automatic exchange rate fetching.
+
+## Technology Stack
+- **Architecture:** Desktop application built with Tauri (Rust) for performance and light footprint.
+- **Backend:** Python (FastAPI) handling local API routes and AI integrations.
+- **Frontend:** Vue 3 (Vite) and Tailwind CSS.
+- **Database:** Local SQLite database.
+
+## Useful Links
+- [Features](https://chiffrepro.com/#/features) - Detailed breakdown of all application features.
+- [Pricing](https://chiffrepro.com/#/pricing) - Lifetime license pricing details.
+- [Download](https://chiffrepro.com/#/download) - Get the latest installer for Windows.
+- [Support](https://chiffrepro.com/#/support) - Help center and contact information.
