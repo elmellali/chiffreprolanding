@@ -16,6 +16,8 @@ const IceValidator = lazy(() => import('./pages/IceValidator'))
 const TaxSimulator = lazy(() => import('./pages/TaxSimulator'))
 const FreeInvoiceGenerator = lazy(() => import('./pages/FreeInvoiceGenerator'))
 const PayrollSimulatorPage = lazy(() => import('./pages/PayrollSimulatorPage'))
+const NumberToWordsPage = lazy(() => import('./pages/NumberToWordsPage'))
+const PenaltyCalculatorPage = lazy(() => import('./pages/PenaltyCalculatorPage'))
 
 const BrandLogo = ({ className = "h-8 w-auto" }: { className?: string }) => (
   <svg viewBox="0 0 120 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,12 +92,12 @@ function AppContent() {
                 onClick={() => setToolsOpen(!toolsOpen)}
                 onMouseEnter={() => setToolsOpen(true)}
               >
-                <span>Outils Gratuits</span>
+                <span>Boîte à Outils</span>
                 <ChevronDown className="w-3.5 h-3.5 opacity-60 group-hover:rotate-180 transition-transform" />
               </button>
 
               <div 
-                className={`absolute top-full left-0 w-64 bg-white rounded-2xl shadow-2xl border border-slate-100 p-2 space-y-1 transition-all ${
+                className={`absolute top-full left-0 w-72 bg-white rounded-2xl shadow-2xl border border-slate-100 p-2 space-y-1 transition-all ${
                   toolsOpen ? 'opacity-100 visible translate-y-1' : 'opacity-0 invisible pointer-events-none'
                 }`}
                 onMouseLeave={() => setToolsOpen(false)}
@@ -114,17 +116,31 @@ function AppContent() {
                     <div className="text-[11px] text-slate-400">CNSS, AMO & IGR 2026</div>
                   </div>
                 </Link>
+                <Link to="/outils/convertisseur-chiffre-en-lettres-dirham" onClick={closeMenu} className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-slate-50 transition-colors">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center flex-shrink-0 font-bold text-xs">MAD</div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-800">Chiffres en Lettres (MAD)</div>
+                    <div className="text-[11px] text-slate-400">Chèques & Factures</div>
+                  </div>
+                </Link>
+                <Link to="/outils/calculateur-penalites-dgi" onClick={closeMenu} className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-slate-50 transition-colors">
+                  <div className="w-8 h-8 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center flex-shrink-0 font-bold text-xs">DGI</div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-800">Pénalités de Retard DGI</div>
+                    <div className="text-[11px] text-slate-400">TVA & IS (Art. 208 CGI)</div>
+                  </div>
+                </Link>
                 <Link to="/outils/validateur-ice" onClick={closeMenu} className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-slate-50 transition-colors">
                   <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 font-bold text-xs">ICE</div>
                   <div>
-                    <div className="text-xs font-bold text-slate-800">Validateur ICE</div>
-                    <div className="text-[11px] text-slate-400">Contrôle clé & 15 chiffres</div>
+                    <div className="text-xs font-bold text-slate-800">Validateur Numéro ICE</div>
+                    <div className="text-[11px] text-slate-400">Contrôle clé 15 chiffres</div>
                   </div>
                 </Link>
                 <Link to="/outils/simulateur-statut-fiscal" onClick={closeMenu} className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-slate-50 transition-colors">
                   <div className="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center flex-shrink-0 font-bold text-xs">IS</div>
                   <div>
-                    <div className="text-xs font-bold text-slate-800">Simulateur Fiscal</div>
+                    <div className="text-xs font-bold text-slate-800">Simulateur Statut Fiscal</div>
                     <div className="text-[11px] text-slate-400">SARL vs Auto-entrepreneur</div>
                   </div>
                 </Link>
@@ -169,7 +185,13 @@ function AppContent() {
                 Créer une Facture (Gratuit)
               </Link>
               <Link to="/outils/simulateur-paie-maroc" onClick={closeMenu} className="p-2.5 rounded-xl bg-accent/10 text-accent font-bold">
-                Simulateur Paie & Salaire Net 2026
+                Simulateur Paie Maroc 2026
+              </Link>
+              <Link to="/outils/convertisseur-chiffre-en-lettres-dirham" onClick={closeMenu} className="p-2.5 rounded-xl bg-amber-50 text-amber-900 font-bold">
+                Chiffres en Lettres (MAD)
+              </Link>
+              <Link to="/outils/calculateur-penalites-dgi" onClick={closeMenu} className="p-2.5 rounded-xl bg-rose-50 text-rose-800 font-bold">
+                Pénalités Retard DGI
               </Link>
               <Link to="/#features" onClick={closeMenu} className="p-2.5 rounded-xl hover:bg-slate-100 font-semibold">
                 Fonctionnalités ERP
@@ -230,6 +252,8 @@ function AppContent() {
             <Route path="/outils/validateur-ice" element={<IceValidator />} />
             <Route path="/outils/simulateur-statut-fiscal" element={<TaxSimulator />} />
             <Route path="/outils/simulateur-paie-maroc" element={<PayrollSimulatorPage />} />
+            <Route path="/outils/convertisseur-chiffre-en-lettres-dirham" element={<NumberToWordsPage />} />
+            <Route path="/outils/calculateur-penalites-dgi" element={<PenaltyCalculatorPage />} />
             <Route path="/generateur-facture-gratuit" element={<FreeInvoiceGenerator />} />
             <Route path="/outils/generateur-facture" element={<FreeInvoiceGenerator />} />
             <Route path="/client" element={<ClientSpace />} />
@@ -264,25 +288,26 @@ function AppContent() {
           
           <div>
             <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Outils Fiscaux & Paie</h4>
-            <ul className="space-y-3 text-sm font-semibold">
+            <ul className="space-y-2.5 text-sm font-semibold">
               <li><Link to="/generateur-facture-gratuit" className="hover:text-white transition-colors text-primary font-bold">Générateur Facture Gratuit</Link></li>
               <li><Link to="/outils/simulateur-paie-maroc" className="hover:text-white transition-colors text-accent font-bold">Simulateur Paie Maroc 2026</Link></li>
+              <li><Link to="/outils/convertisseur-chiffre-en-lettres-dirham" className="hover:text-white transition-colors text-amber-400">Chiffres en Lettres (MAD)</Link></li>
+              <li><Link to="/outils/calculateur-penalites-dgi" className="hover:text-white transition-colors text-rose-400">Pénalités Retard DGI</Link></li>
               <li><Link to="/outils/validateur-ice" className="hover:text-white transition-colors text-emerald-400">Validateur ICE Maroc</Link></li>
               <li><Link to="/outils/simulateur-statut-fiscal" className="hover:text-white transition-colors text-indigo-400">Simulateur Statut Fiscal 2026</Link></li>
-              <li><Link to="/modeles/btp" className="hover:text-white transition-colors">Modèles Facture BTP & Travaux</Link></li>
-              <li><Link to="/modeles/transport" className="hover:text-white transition-colors">Modèles Facture Transport</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Modules Logiciel</h4>
-            <ul className="space-y-3 text-sm font-semibold">
-              <li><Link to="/#features" className="hover:text-white transition-colors">Ventes & Facturation ICE</Link></li>
-              <li><Link to="/#paie" className="hover:text-white transition-colors">Module Paie & RH Maroc</Link></li>
-              <li><Link to="/#features" className="hover:text-white transition-colors">Stocks Multi-dépôts (CUMP)</Link></li>
-              <li><Link to="/#features" className="hover:text-white transition-colors">Achats & Fournisseurs</Link></li>
-              <li><Link to="/#pricing" className="hover:text-white transition-colors">Tarifs & Licences</Link></li>
-              <li><Link to="/guides" className="hover:text-white transition-colors">Guides d'utilisation & FAQ</Link></li>
+            <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Modèles par Métier</h4>
+            <ul className="space-y-2 text-xs font-semibold text-slate-400">
+              <li><Link to="/modeles/btp" className="hover:text-white transition-colors">Facture BTP & Travaux</Link></li>
+              <li><Link to="/modeles/transport" className="hover:text-white transition-colors">Facture Transport & Fret (14%)</Link></li>
+              <li><Link to="/modeles/cabinet-medical" className="hover:text-white transition-colors">Note Honoraires Médicale (0%)</Link></li>
+              <li><Link to="/modeles/avocat-juridique" className="hover:text-white transition-colors">Facture Avocat & Notaire (10%)</Link></li>
+              <li><Link to="/modeles/auto-entrepreneur" className="hover:text-white transition-colors">Facture Auto-Entrepreneur</Link></li>
+              <li><Link to="/modeles/import-export-portnet" className="hover:text-white transition-colors">Facture Export PortNet (Devises)</Link></li>
+              <li><Link to="/modeles/commerce-gros" className="hover:text-white transition-colors">Facture Commerce de Gros & BL</Link></li>
             </ul>
           </div>
 

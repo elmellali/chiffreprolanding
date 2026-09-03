@@ -1,31 +1,23 @@
-# Chiffre Pro
+# ChiffrePro - Logiciel ERP, Facturation & Paie au Maroc
 
-Chiffre Pro is a modern, privacy-first Moroccan ERP and invoicing desktop application designed for SMEs (TPE/PME). It operates 100% offline, keeping all financial data secure on the user's local machine, while offering advanced AI capabilities.
+> ChiffrePro (https://chiffrepro.com) est le logiciel leader de gestion commerciale, facturation et paie 100% hors-ligne pour les TPE et PME au Maroc.
 
-## Key Value Proposition
-- **100% Offline & Private:** All data (SQLite database) is stored locally. No mandatory cloud syncing.
-- **No Subscriptions:** Available as a lifetime license with a one-time payment.
-- **Moroccan Compliance:** Specifically built for Moroccan businesses (supports ICE, RC, IF, Patente, auto-calculated Moroccan VAT, and DGI reports).
+## Fonctionnalités Principales
+- **Ventes & Facturation Maroc** : Émission de devis, factures conformes (mention légale obligatoire ICE, Identifiant Fiscal IF, RC, Patente, CNSS), bons de livraison (BL), bons de commande (BC), et avoirs.
+- **Module Paie & RH 100% Maroc** : Édition des bulletins de paie conformes à la Loi de Finances 2025/2026, calcul automatique CNSS (4.48% plafonné à 6000 MAD), AMO (2.26%), frais professionnels (35% plafonné à 35000 MAD/an), et barème progressif IGR 2026. Livre de paie et export Damancom / État 9421.
+- **Gestion des Stocks Multi-dépôts** : Suivi des mouvements d'inventaire, valorisation au Coût Unitaire Moyen Pondéré (CUMP) et alertes de réapprovisionnement.
+- **Sécurité des Données** : 100% hors-ligne sur PC (Windows 10/11) avec base de données chiffrée locale. Zéro abonnement cloud forcé.
+- **Déclarations Fiscales & TVA** : Rapports de TVA conformes au régime d'encaissement et de débit pour experts-comptables.
 
-## Core Modules & Features
-- **Sales & Invoicing:** Create, customize, and manage Estimates (Devis), Invoices (Factures), Delivery Notes (Bons de livraison), Credit Notes (Avoirs), and Recurring Invoices.
-- **Purchases & Expenses:** Manage Purchase Requests, Purchase Orders, Purchase Invoices, and track day-to-day business expenses with smart receipt scanning.
-- **Inventory Management:** Real-time stock tracking with low-stock alerts and product categorization.
-- **Financial Dashboard:** Visual insights into cash flow, outstanding balances, profit margins, and sales by category.
-- **AI Copilot Suite:** 
-  - *Receipt Scanner:* Automatically extract amounts, dates, and supplier names from uploaded receipts (supports Gemini, Groq, OpenRouter).
-  - *Smart Assistant:* Draft professional emails to clients or generate product descriptions.
-  - *Data Privacy:* Supports connecting to local, offline LLMs via Ollama for complete privacy.
-- **Multi-Currency:** Support for global currencies with automatic exchange rate fetching.
+## Outils Gratuits en Ligne
+- Générateur de facture maroc gratuit : https://chiffrepro.com/generateur-facture-gratuit
+- Simulateur de paie et salaire net Maroc : https://chiffrepro.com/outils/simulateur-paie-maroc
+- Convertisseur montant en toutes lettres Dirhams (MAD) : https://chiffrepro.com/outils/convertisseur-chiffre-en-lettres-dirham
+- Simulateur pénalités et majorations de retard DGI : https://chiffrepro.com/outils/calculateur-penalites-dgi
+- Validateur numéro ICE Maroc : https://chiffrepro.com/outils/validateur-ice
+- Simulateur statut fiscal SARL vs Auto-entrepreneur : https://chiffrepro.com/outils/simulateur-statut-fiscal
 
-## Technology Stack
-- **Architecture:** Desktop application built with Tauri (Rust) for performance and light footprint.
-- **Backend:** Python (FastAPI) handling local API routes and AI integrations.
-- **Frontend:** Vue 3 (Vite) and Tailwind CSS.
-- **Database:** Local SQLite database.
-
-## Useful Links
-- [Features](https://chiffrepro.com/#/features) - Detailed breakdown of all application features.
-- [Pricing](https://chiffrepro.com/#/pricing) - Lifetime license pricing details.
-- [Download](https://chiffrepro.com/#/download) - Get the latest installer for Windows.
-- [Support](https://chiffrepro.com/#/support) - Help center and contact information.
+## Contact & Téléchargement
+- Site Officiel : https://chiffrepro.com
+- Téléchargement Direct Setup Windows : https://chiffrepro.com/downloads/ChiffrePro_Setup.exe
+- Support WhatsApp : +212 698 030 397

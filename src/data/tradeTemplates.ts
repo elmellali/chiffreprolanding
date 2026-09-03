@@ -228,5 +228,215 @@ export const tradeTemplates: Record<string, TradeTemplate> = {
         answer: "Oui, les prestations de formation continue animées par des cabinets privés sont soumises au taux standard de TVA de 20% au Maroc."
       }
     ]
+  },
+  "cabinet-medical": {
+    slug: "cabinet-medical",
+    tradeName: "Médecins, Dentistes & Cabinets Médicaux",
+    headline: "Modèle de Note d'Honoraires & Facture Médicale au Maroc",
+    metaTitle: "Modèle Facture Médicale & Note d'Honoraires Maroc (Exonéré TVA)",
+    metaDescription: "Modèle de note d'honoraires pour médecins, cliniques et dentistes au Maroc. Mention obligatoire d'exonération de TVA (Article 91 CGI).",
+    taxRate: 0,
+    currency: "DH",
+    legalMentions: [
+      "Exonération de TVA sans droit à déduction en vertu de l'article 91-I du Code Général des Impôts (prestations de santé)",
+      "Numéro d'inscription à l'Ordre National des Médecins ou Dentistes",
+      "Identifiant Fiscal (IF) et Taxe Professionnelle (Patente)",
+      "Mention des actes médicaux codifiés CNSS / AMO"
+    ],
+    defaultItems: [
+      { desc: "Consultation médicale spécialisée & examen clinique", qty: 1, price: 400 },
+      { desc: "Échographie de contrôle doppler haute résolution", qty: 1, price: 600 },
+      { desc: "Bilan médical de synthèse & prescription", qty: 1, price: 200 }
+    ],
+    commonMistakes: [
+      "Appliquer de la TVA sur des actes de soins médicaux (les soins sont exonérés)",
+      "Oublier d'indiquer l'Identifiant Fiscal sur la note d'honoraires transmise aux mutuelles",
+      "Ne pas délivrer de reçu détaillé exigé pour les remboursements AMO / CNOPS"
+    ],
+    tradeFaq: [
+      {
+        question: "Les médecins doivent-ils facturer la TVA au Maroc ?",
+        answer: "Non, les actes de diagnostic, de traitement et de soins dispensés par les professionnels de santé sont exonérés de TVA conformément à l'article 91 du CGI marocain."
+      },
+      {
+        question: "Quelle est la différence entre une note d'honoraires et une facture ?",
+        answer: "Pour les professions libérales de santé, la note d'honoraires fait office de facture légale justificative pour le patient et sa mutuelle."
+      }
+    ]
+  },
+  "avocat-juridique": {
+    slug: "avocat-juridique",
+    tradeName: "Avocats, Notaires & Conseillers Juridiques",
+    headline: "Modèle de Facture d'Honoraires Avocat & Notaire au Maroc",
+    metaTitle: "Modèle Facture Avocat & Notaire Maroc (TVA 10% / 20%) - Gratuit",
+    metaDescription: "Modèle de facture d'honoraires juridiques pour avocats et notaires au Maroc. Application du taux de TVA légal et retenue à la source.",
+    taxRate: 10,
+    currency: "DH",
+    legalMentions: [
+      "Taux de TVA à 10% sur les prestations des avocats et interprètes agréés (art. 99 CGI)",
+      "Numéro d'inscription au Barreau ou à l'Ordre des Notaires",
+      "Mention expresse du numéro de dossier ou de l'affaire judiciaire",
+      "Détail des débours et droits de timbre avancés pour le compte du client"
+    ],
+    defaultItems: [
+      { desc: "Honoraires de consultation juridique et rédaction de statuts SARL", qty: 1, price: 8500 },
+      { desc: "Assistance et représentation devant le Tribunal de Commerce", qty: 1, price: 12000 },
+      { desc: "Débours : Droits d'enregistrement et taxe judiciaire (remboursables)", qty: 1, price: 2150 }
+    ],
+    commonMistakes: [
+      "Facturer de la TVA sur les débours payés à l'État (les débours ne sont pas taxables)",
+      "Appliquer un taux de TVA erroné sans vérifier le barème en vigueur",
+      "Ne pas distinguer les honoraires de conseil de la provision pour frais de justice"
+    ],
+    tradeFaq: [
+      {
+        question: "Les débours doivent-ils être soumis à la TVA ?",
+        answer: "Non, les débours engagés au nom et pour le compte du client (frais d'enregistrement, timbres, taxes de greffe) sont facturés à l'euro/dirham près sans TVA."
+      },
+      {
+        question: "Quel est le taux de TVA applicable pour les avocats au Maroc ?",
+        answer: "Le taux de TVA applicable aux honoraires des avocats inscrits au barreau est de 10% selon le Code Général des Impôts."
+      }
+    ]
+  },
+  "restauration-traiteur": {
+    slug: "restauration-traiteur",
+    tradeName: "Restauration, Cafés & Traiteurs",
+    headline: "Modèle de Facture Restauration & Traiteur au Maroc",
+    metaTitle: "Modèle Facture Restaurant & Traiteur Maroc (TVA 10%) - Gratuit",
+    metaDescription: "Modèle de facture pour traiteurs, restaurants et organisateurs de réceptions au Maroc. Taux de TVA à 10% et mentions légales conformes.",
+    taxRate: 10,
+    currency: "DH",
+    legalMentions: [
+      "Taux de TVA à 10% applicable aux prestations de restauration et fourniture de repas",
+      "Mention détaillée du nombre de couverts ou forfaits banquet",
+      "ICE obligatoire pour les réceptions d'entreprises (séminaires, comités d'entreprise)",
+      "Conditions d'acompte à la réservation et solde le jour de l'événement"
+    ],
+    defaultItems: [
+      { desc: "Prestation Traiteur Buffet Déjeuner d'affaires (Couverts)", qty: 60, price: 220 },
+      { desc: "Pause-café d'accueil : viennoiseries marocaines & jus frais", qty: 60, price: 45 },
+      { desc: "Service en salle & maîtres d'hôtel dédiés (Forfait)", qty: 4, price: 600 }
+    ],
+    commonMistakes: [
+      "Facturer la location de matériel ou salle à 10% au lieu de 20%",
+      "Oublier de ventiler les prestations de bouche (10%) et les autres services (20%)",
+      "Ne pas faire signer le bon de commande de réception"
+    ],
+    tradeFaq: [
+      {
+        question: "Quel est le taux de TVA pour un service traiteur d'entreprise ?",
+        answer: "La fourniture de nourriture et boissons préparées est soumise au taux de TVA réduit de 10% au Maroc."
+      },
+      {
+        question: "La facture de restaurant est-elle déductible pour une société ?",
+        answer: "Oui, les frais de repas d'affaires sont déductibles si la facture comporte l'ICE de la société cliente et correspond à un motif professionnel légitime."
+      }
+    ]
+  },
+  "auto-entrepreneur": {
+    slug: "auto-entrepreneur",
+    tradeName: "Auto-Entrepreneurs & Indépendants",
+    headline: "Modèle de Facture Auto-Entrepreneur Maroc (100% Conforme)",
+    metaTitle: "Modèle Facture Auto-Entrepreneur Maroc Gratuit (Exonération TVA)",
+    metaDescription: "Modèle de facture officiel pour auto-entrepreneurs au Maroc. Mention légale obligatoire d'exonération de TVA (Article 91 CGI) et ICE.",
+    taxRate: 0,
+    currency: "DH",
+    legalMentions: [
+      "Mention légale obligatoire : 'Franchise en base de TVA - Exonéré en vertu de l'article 91 du CGI'",
+      "Numéro de la Carte Nationale d'Auto-Entrepreneur (RNAE)",
+      "Numéro d'Identifiant Commun de l'Entreprise (ICE)",
+      "Montant total net à payer en Dirhams (MAD) sans aucune TVA"
+    ],
+    defaultItems: [
+      { desc: "Prestation de création de contenu & gestion réseaux sociaux (Mois)", qty: 1, price: 3500 },
+      { desc: "Conception graphique supports marketing & bannières", qty: 5, price: 400 },
+      { desc: "Rédaction d'articles optimisés SEO pour site web (Pack 10)", qty: 1, price: 2500 }
+    ],
+    commonMistakes: [
+      "Faire figurer une ligne de TVA (l'auto-entrepreneur n'a pas le droit de facturer la TVA)",
+      "Oublier la mention légale d'exonération obligatoire (risque de rejet par le client SARL)",
+      "Dépasser le plafond annuel de chiffre d'affaires autorisé par l'État"
+    ],
+    tradeFaq: [
+      {
+        question: "Une entreprise peut-elle refuser une facture d'auto-entrepreneur ?",
+        answer: "Non, la facture est 100% légale et comptabilisable si elle comporte le numéro d'auto-entrepreneur, l'ICE et la mention d'exonération de TVA."
+      },
+      {
+        question: "Quel est le seuil de chiffre d'affaires pour les auto-entrepreneurs en 2026 ?",
+        answer: "500 000 DH/an pour le commerce et l'industrie, et 200 000 DH/an pour les prestations de services."
+      }
+    ]
+  },
+  "import-export-portnet": {
+    slug: "import-export-portnet",
+    tradeName: "Importateurs, Exportateurs & Transitaires",
+    headline: "Modèle de Facture Export & Commerce International Maroc",
+    metaTitle: "Modèle Facture Export Maroc (PortNet, Devises, TVA 0%) - Conforme",
+    metaDescription: "Modèle de facture export pour entreprises marocaines. Conformité PortNet, facturation en devises étrangères (EUR/USD) et TVA 0% (Article 89 CGI).",
+    taxRate: 0,
+    currency: "EUR",
+    legalMentions: [
+      "Mention obligatoire : 'Opération d'exportation de biens/services - Exonérée de TVA avec droit à déduction (Art. 89-I CGI)'",
+      "Mention du titre d'exportation (Engagement de change / Déclaration Unique de Marchandises DUM)",
+      "Indication de la devise de transaction (EUR, USD, MAD) et conditions Incoterms (FOB, CIF, DAP)",
+      "Compte bancaire professionnel marocain pour le rapatriement des devises"
+    ],
+    defaultItems: [
+      { desc: "Export Huile d'Argan Cosmétique Bio Pure 100ml (Lot de 500 unités)", qty: 500, price: 8.50 },
+      { desc: "Conditionnement spécifique export & étiquetage multilingue", qty: 1, price: 450.00 },
+      { desc: "Fret maritime FOB Casablanca Port", qty: 1, price: 800.00 }
+    ],
+    commonMistakes: [
+      "Facturer de la TVA marocaine à un client étranger à l'export",
+      "Omettre la référence DUM / PortNet exigée par l'Office des Changes",
+      "Ne pas conserver le justificatif bancaire de rapatriement des devises"
+    ],
+    tradeFaq: [
+      {
+        question: "L'exportation est-elle exonérée de TVA au Maroc ?",
+        answer: "Oui, les ventes de produits et services consommés hors du territoire marocain sont exonérées de TVA au taux de 0% avec droit à déduction de la TVA d'amont."
+      },
+      {
+        question: "Quel est le délai pour rapatrier les devises au Maroc ?",
+        answer: "Selon la réglementation de l'Office des Changes, le produit des exportations de biens doit être rapatrié dans un délai maximum de 150 jours à compter de la date d'expédition."
+      }
+    ]
+  },
+  "location-voitures": {
+    slug: "location-voitures",
+    tradeName: "Agences de Location de Voitures (Rent a Car)",
+    headline: "Modèle de Facture Location de Véhicules au Maroc",
+    metaTitle: "Modèle Facture Location Voiture Maroc (TVA 20% & Caution) - Gratuit",
+    metaDescription: "Modèle de facture pour agences de location de voitures au Maroc. Gestion des contrats, franchises d'assurance, cautions et TVA à 20%.",
+    taxRate: 20,
+    currency: "DH",
+    legalMentions: [
+      "Taux de TVA standard à 20% sur les locations de véhicules sans chauffeur",
+      "Mention du contrat de location, numéro de matricule et dates de début/fin",
+      "Numéro d'agrément du Ministère du Transport (autorisation d'exploitation)",
+      "Détail clair entre le prix de location et les franchises/assurances complémentaires"
+    ],
+    defaultItems: [
+      { desc: "Location Véhicule Citadin Automatique (Durée 7 jours)", qty: 7, price: 350 },
+      { desc: "Option Assurance Tous Risques sans franchise (Pack Sérénité)", qty: 7, price: 80 },
+      { desc: "Option Siège Bébé & Kilométrage Illimité", qty: 1, price: 150 }
+    ],
+    commonMistakes: [
+      "Confondre la caution (dépôt de garantie non taxable) et le montant de la prestation facturée",
+      "Ne pas faire contresigner la fiche d'état des lieux de départ et retour",
+      "Omettre le numéro d'agrément transport sur la facture"
+    ],
+    tradeFaq: [
+      {
+        question: "La caution encaissée temporairement est-elle soumise à la TVA ?",
+        answer: "Non, la caution est un dépôt de garantie non assujetti à la TVA. Seules les sommes conservées pour dédommagement de sinistre ou franchise peuvent être régularisées."
+      },
+      {
+        question: "Quel est le taux de TVA pour une location avec chauffeur ?",
+        answer: "La location avec chauffeur est assimilée à une prestation de transport soumise au taux réduit de 14% sous conditions d'agrément."
+      }
+    ]
   }
 };

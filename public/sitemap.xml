@@ -1,116 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Pages & Free Inbound Tools -->
   <url>
     <loc>https://chiffrepro.com/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/generateur-facture-gratuit</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://chiffrepro.com/outils/validateur-ice</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://chiffrepro.com/outils/simulateur-paie-maroc</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/outils/convertisseur-chiffre-en-lettres-dirham</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/outils/calculateur-penalites-dgi</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/outils/validateur-ice</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/outils/simulateur-statut-fiscal</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
-  
-  <!-- Programmatic Trade Invoicing Models -->
   <url>
-    <loc>https://chiffrepro.com/modeles/btp</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://chiffrepro.com/guides</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/blog</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://chiffrepro.com/modeles/transport</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://chiffrepro.com/support</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/client</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/modeles/agence-digitale</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/modeles/artisan</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/auto-entrepreneur</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/avocat-juridique</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/btp</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/cabinet-medical</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/modeles/commerce-gros</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/modeles/consultant</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Blog & Guides -->
   <url>
-    <loc>https://chiffrepro.com/blog</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://chiffrepro.com/modeles/import-export-portnet</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/location-voitures</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/restauration-traiteur</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/modeles/transport</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/blog/automatiser-saisie-factures-pdf-ia</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chiffrepro.com/blog/meilleurs-logiciels-facturation-ia-tpe</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/blog/guide-complet-facturation-ice-maroc-2026</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://chiffrepro.com/blog/meilleurs-logiciels-facturation-ia-tpe</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://chiffrepro.com/blog/tpe-pme-gerer-stocks-hors-ligne-securite</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chiffrepro.com/guides</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://chiffrepro.com/support</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://chiffrepro.com/client</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.80</priority>
   </url>
 </urlset>
